@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Inicio</title>
-    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h2>Buscar</h2>
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Escribe para buscar...">
-            <button onclick="performSearch()">Buscar</button>
+    <header>
+        <div class="logo">
+            <img src="Resource/Logo.jpg" alt="Logotipo de la Empresa">
         </div>
-        <ul id="search-results"></ul>
-    </div>
+        <nav class="navbar">
+            <ul>
+                <input type="text" id="search-input" placeholder="Escribe para buscar...">
+                <button onclick="performSearch()" id="button xd">
+                    <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/>
+                </button>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="content">
         <!-- Sección del Catálogo -->
         <h2>Catálogo de Productos</h2>
         <div class="catalog">
-            <div class="product" onclick="redirectToProduct('Producto1')">
-                <img src="Resource/Productos/Producto1/1.jpg" alt="Producto 1">
+            <div class="product" onclick="redirectToProduct('Producto1.php')">
+                <img src="Resource/Productos/Producto1/1.jpg" alt="Producto1">
                 <p>Puma</p>
                 <p>Jersey Puma Chivas Local Actual Futbol 2024</p>
             </div>
@@ -52,10 +61,8 @@
                 <img src="img/producto8.jpg" alt="Producto 8">
                 <p>Producto 8</p>
             </div>
-            </div>
         </div>
     </div>
-
     <script src="JS/script.js"></script>
 </body>
 </html>
