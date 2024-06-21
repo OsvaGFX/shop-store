@@ -1,0 +1,170 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Estilo de la barra */
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+
+/* Estilo del la barra de busqueda */
+
+#search-input {
+    width: 400px; /* Ajuste el ancho aquí */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    flex: 1; /* El campo de texto ocupa todo el espacio restante */
+    padding: 10px;
+    border: none;
+    outline: none; /* Quita el borde de enfoque */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Ajustar el ancho según sea necesario */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+/* Estilo del Boton Buscar */
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: -42px; /* Espacio entre el input y el botón */
+}
+
+button img {
+    margin-left: 2px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo del titulo para las secciones */
+
+.title {
+    font-size: 70px;
+    margin-top: 70px;
+    margin-left: 25%;
+}
+
+
+/* Estilo del Catálogo */
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 80px; /* Ajuste para dejar espacio para el header */
+}
+
+.product {
+    flex: 1 1 calc(20% - 40px); /* Ajuste de ancho para 3 productos por fila con espacio */
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.product img {
+    width: 30%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.product-detail {
+    text-align: center;
+}
+
+.product-detail img {
+    width: 20%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+.product-detail p {
+    font-size: 18px;
+    color: #555;
+}
+
+.product-img {
+    width: 60%;
+    height: 60%;
+    margin-top: 40px;
+    margin-left: 300px;
+    overflow: hidden; /* Para asegurar que la imagen no se salga del contenedor */
+    position: relative; /* Necesario para posicionamiento */
+    cursor: zoom-in;
+}
+
+.product-img:hover img {
+    transform: scale(2.0); /* Zoom al 110% del tamaño original al pasar el mouse */
+}

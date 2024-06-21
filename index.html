@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicio</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Resource/Logo.jpg" alt="Logotipo de la Empresa">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <input type="text" id="search-input" placeholder="Escribe para buscar...">
+                <button onclick="performSearch()" id="">
+                    <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/>
+                </button>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <!-- Sección del Catálogo -->
+    <div class="title">
+        <h2>NOVEDADES</h2>
+    </div>
+    <div class="catalog">
+        <div class="product" onclick="redirectToProduct('producto.html')">
+            <img src="/Img/1.jpg" alt="Jersey Puma Chivas Local Actual Futbol 2024">
+            <p>Puma</p>
+            <p>Jersey Puma Chivas Local Actual Futbol 2024</p>
+        </div>
+    <div class="product" onclick="redirectToProduct('producto_individual.html')">
+            <img src="https://cdn11.bigcommerce.com/s-f13ae7le0r/images/stencil/1280x1280/products/1084/2551/JERSEY_ESPORTS_P6630_CL24__62505.1708471991.jpg?c=1" alt="Producto 2">
+            <p>Puma</p>
+            <p>Jersey Esports Hombre Cl24</p>
+            </div>            
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
