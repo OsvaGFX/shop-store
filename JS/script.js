@@ -2,7 +2,7 @@ function redirectToProduct(url) {
     window.location.href = url;
 }
 
-document.querySelector('.product-img').addEventListener('mousemove', function(e) {
+document.querySelector('.product-img-ind').addEventListener('mousemove', function(e) {
     const img = this.querySelector('img');
     const boundingRect = this.getBoundingClientRect(); // Obtener las dimensiones y posición del contenedor
     const offsetX = e.clientX - boundingRect.left; // Posición X del cursor relativa al contenedor
@@ -11,10 +11,12 @@ document.querySelector('.product-img').addEventListener('mousemove', function(e)
     const centerY = boundingRect.height / 2; // Centro Y del contenedor
     const moveX = (offsetX - centerX) / centerX * 100; // Movimiento en X del cursor relativo al centro
     const moveY = (offsetY - centerY) / centerY * 100; // Movimiento en Y del cursor relativo al centro
-    img.style.transform = `scale(2) translate(${moveX}px, ${moveY}px)`;
+
+    // Invertir los valores para corregir la dirección
+    img.style.transform = `scale(2) translate(${-moveX}px, ${-moveY}px)`;
 });
 
-document.querySelector('.product-img').addEventListener('mouseleave', function() {
+document.querySelector('.product-img-ind').addEventListener('mouseleave', function() {
     const img = this.querySelector('img');
     img.style.transform = 'scale(1)'; // Restaurar el tamaño original cuando el cursor sale del contenedor
 });

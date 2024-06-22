@@ -155,16 +155,14 @@ button:hover {
     color: #555;
 }
 
-.product-img {
-    width: 60%;
-    height: 60%;
-    margin-top: 40px;
+.product-img-ind {
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 30px;
     margin-left: 300px;
-    overflow: hidden; /* Para asegurar que la imagen no se salga del contenedor */
-    position: relative; /* Necesario para posicionamiento */
     cursor: zoom-in;
 }
 
 .product-img:hover img {
-    transform: scale(2.0); /* Zoom al 110% del tamaño original al pasar el mouse */
+    transform: scale(1.1); /* Zoom al 110% del tamaño original al pasar el mouse */
 }
