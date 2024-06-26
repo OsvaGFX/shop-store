@@ -175,9 +175,17 @@ button:hover {
 /* Estilo para el contenedor principal sobre las diferentes previews */
 .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 70px; /* Espacio entre los elementos, ajusta según sea necesario */
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.relative-1, .product-img-ind, .Text-Product {
+    margin: 10px;
+    margin-top: 100px;
+}
+
+.Text-Product {
+    margin-left: auto; /* Alinea al lado derecho */
 }
 
 /* Estilo para el div de la imagen lateral */
@@ -200,3 +208,29 @@ button:hover {
 .product-img:hover img {
     transform: scale(1.1); /* Zoom al 110% del tamaño original al pasar el mouse */
 }
+
+/* Estilo Box shadow text */
+.Text-Product {
+    background-color: #ffffff;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    margin-top: 100px;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #000000;
+}
+
