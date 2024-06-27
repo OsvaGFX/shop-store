@@ -234,3 +234,24 @@ button:hover {
     color: #000000;
 }
 
+button.btn-carrito{
+    margin-left: 10px;
+    display: grid;
+}
+
+.button-container-tallas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+button.btn-Tallas {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
